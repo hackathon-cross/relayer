@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev --no-notify  --respawn --transpileOnly  index.ts",
+    "start": "DEBUG=relayer:* ts-node-dev --no-notify  --respawn --transpileOnly  src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,10 +18,10 @@
     "@nervosnetwork/ckb-sdk-core": "^0.30.0",
     "@types/lodash": "^4.14.149",
     "@types/lowdb": "^1.0.9",
-    "hermit-purple-server": "^0.3.0-alpha.0",
+    "hermit-purple-server": "^0.3.0-alpha.3",
     "lodash": "^4.17.15",
     "lowdb": "^1.0.0",
-    "muta-sdk": "^0.9.0",
+    "muta-sdk": "^0.8.0-alpha.1",
     "snakecase-keys": "^3.1.2"
   }
 }

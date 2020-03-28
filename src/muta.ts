@@ -35,7 +35,7 @@ export interface CkbHeader {
   nonce: Uint128;
 }
 
-interface MessagePayload {
+export interface MessagePayload {
   height: u64; // ckb block height
   messages: Vec<CkbMessage>;
 }
@@ -76,9 +76,10 @@ interface BurnPayload {
   amount: u64; // amount of asset to cross-back to ckb
 }
 
-interface BurnEvent {
+export interface BurnEvent {
   asset_id: Hash;
-  receiver: String;
+  muta_sender: Address;
+  ckb_receiver: String;
   amount: u64;
   nonce: u64;
   kind: String; // "cross_to_ckb"

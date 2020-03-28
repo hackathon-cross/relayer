@@ -1397,10 +1397,10 @@ hdkey@^1.1.1:
     safe-buffer "^5.1.1"
     secp256k1 "^3.0.1"
 
-hermit-purple-server@^0.3.0-alpha.0:
-  version "0.3.0-alpha.0"
-  resolved "https://registry.npmjs.org/hermit-purple-server/-/hermit-purple-server-0.3.0-alpha.0.tgz#61f47c3ab23fa290fc47a6c8b2ab954562de6bb6"
-  integrity sha512-7ayG7cV+QLkd2us8i8PFfBhlTh/fgA+SWl9s5Rbf56SBn/+Fubx4hMxPj5SEWzDAQtjlmMXl4L5BFO87qYRb4w==
+hermit-purple-server@^0.3.0-alpha.3:
+  version "0.3.0-alpha.3"
+  resolved "https://registry.npmjs.org/hermit-purple-server/-/hermit-purple-server-0.3.0-alpha.3.tgz#86d6929f5d5601656443f52e675a14b7cdb61dac"
+  integrity sha512-435tZs/4sPf8l3kuK0LGjxvsMDZ1xKUCe/OPOFA43BoEQUkIZh+hf/eCxHEd2IslR2lpMAxtVmDcRBwOHN3unw==
   dependencies:
     "@types/app-root-path" "^1.2.4"
     "@types/bluebird" "^3.5.29"
@@ -1427,7 +1427,7 @@ hermit-purple-server@^0.3.0-alpha.0:
     lossless-json "^1.0.3"
     lru-cache "^5.1.1"
     module-alias "^2.2.2"
-    muta-sdk "^0.8.0-alpha.0"
+    muta-sdk "^0.8.0-alpha.1"
     mysql "^2.18.1"
     nexus "0.12.0-rc.13"
 
@@ -2041,33 +2041,10 @@ ms@^2.1.1:
   resolved "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-muta-sdk@^0.8.0-alpha.0:
-  version "0.8.0-alpha.0"
-  resolved "https://registry.npmjs.org/muta-sdk/-/muta-sdk-0.8.0-alpha.0.tgz#9f8d85ed13da28a36314c8fd1ce26e782d82a6ff"
-  integrity sha512-D9vpObirTDlbbwZLj6ZaFf/lY9T98NZ4yFIQ2XaC5L4Hf59MqrWZn17U9alN70rRdmVSVlli777YDojJQ3+uyQ==
-  dependencies:
-    "@types/debug" "^4.1.5"
-    "@types/randombytes" "^2.0.0"
-    "@types/secp256k1" "^3.5.0"
-    bignumber.js "^9.0.0"
-    bip39 "^3.0.2"
-    cross-fetch "^3.0.4"
-    debug "^4.1.1"
-    graphql "^14.5.8"
-    graphql-request "^1.8.2"
-    graphql-tag "^2.10.1"
-    hdkey "^1.1.1"
-    json-bigint "^0.3.0"
-    keccak "^2.0.0"
-    randombytes "^2.1.0"
-    rlp "^2.2.3"
-    secp256k1 "^3.7.1"
-    utility-types "^3.9.0"
-
-muta-sdk@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/muta-sdk/-/muta-sdk-0.9.0.tgz#1ca3d9978d709e875549e13ab4cd9720e31070a0"
-  integrity sha512-d12S6ys9dDe4uQ5MZRVDhHpyH3EdXYwywb4322gULvdnoRNff0lPyO9iSwRID54iq4FrueGA/XpqK4VnvbMBwA==
+muta-sdk@^0.8.0-alpha.1:
+  version "0.8.0-alpha.1"
+  resolved "https://registry.npmjs.org/muta-sdk/-/muta-sdk-0.8.0-alpha.1.tgz#cf63b56ce8b675c1c67969432368255c5d06740f"
+  integrity sha512-p50Xglsm38pa6w7NX+qI2C8T4/NJNgrqMbSQp2OA8wjahrGidwp0RDiraXYSF56ERoyU3D4yol7kZ26tv5sa4A==
   dependencies:
     "@types/debug" "^4.1.5"
     "@types/randombytes" "^2.0.0"
