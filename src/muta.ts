@@ -1,4 +1,5 @@
 import { createBindingClass, Muta, Write, write } from "muta-sdk";
+import RPC  from "@nervosnetwork/ckb-sdk-rpc";
 import { Hash, u64, Vec } from "muta-sdk/build/main/types/scalar";
 import { config } from "./config";
 
@@ -79,24 +80,24 @@ interface BurnPayload {
 export interface BurnEvent {
   asset_id: Hash;
   muta_sender: Address;
-  ckb_receiver: String;
+  ckb_receiver: string;
   amount: u64;
   nonce: u64;
-  kind: String; // "cross_to_ckb"
-  topic: String; // "burn_asset"
+  kind: string; // "cross_to_ckb"
+  topic: string; // "burn_asset"
 }
 
 interface CrossCKBServiceModel {
   update_headers: Write<UpdateHeadersPayload, "">;
-  submit_message: Write<MessagePayload, "">;
+  submit_messages: Write<MessagePayload, "">;
   burn_sudt: Write<BurnPayload, "">;
 }
 
 export const CrossCKBService = createBindingClass<CrossCKBServiceModel>(
-  "cross-ckb",
+  "crosschain",
   {
     update_headers: write(),
-    submit_message: write(),
+    submit_messages: write(),
     burn_sudt: write()
   }
 );

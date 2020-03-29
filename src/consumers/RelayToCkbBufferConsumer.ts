@@ -1,6 +1,7 @@
 import { ckb } from "../ckb";
 import { CkbRelayMessage, relayToCkbBuffer } from "../db";
 import { wait } from "../utils";
+import { sendUnlockTx } from "./sendUnlockTransaction";
 
 export class RelayToCkbBufferConsumer {
   start() {
@@ -18,9 +19,10 @@ export class RelayToCkbBufferConsumer {
     const proposed = await relayToCkbBuffer.readProposed();
     const messages = proposed.map<CkbRelayMessage>(p => p.data);
 
-    // TODO assemble transaction here
+    if (!messages.length) return;
 
-    const txHash = "";
+    const txHash = await sendUnlockTx(messages);
+
     if (txHash) {
       for (const message of proposed) {
         await relayToCkbBuffer.markAsPending(message.height, txHash);

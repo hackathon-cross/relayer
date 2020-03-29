@@ -5,9 +5,9 @@ import { mutaCollection, relayToCkbBuffer } from "../db";
 import { BurnEvent } from "../muta";
 import { wait } from "../utils";
 
-const debug = require("debug")("relayer:muta");
+const debug = require("debug")("relayer:muta-listener");
 
-export class MutaToCkbRelayer {
+export class MutaListener {
   async getLocalHeight() {
     return mutaCollection.getLatestHeight();
   }

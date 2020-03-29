@@ -1,0 +1,23 @@
+{
+  "muta": {
+    "endpoint": "http://47.56.237.128:4800/graphql",
+    "privateKey": "0x2b672bb959fa7a852d7259b129b65aee9c83b39f427d6f7bded1f58c4c9310c2"
+  },
+  "ckb": {
+    "url": "http://http://127.0.0.1:8114",
+    "privateKey": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeff",
+    "output": {
+      "lock": {
+        "codeHash": "0xd483925160e4232b2cb29f012e8380b7b612d71cf4e79991476b6bcf610735f6",
+        "hashType": "data",
+        "args": "0xb4b972b0429699cb4da8cc285142e608db1a7acb208ee4fbf16d57612438b1ea"
+      },
+      "type": {
+        "codeHash": "0x57dd0067814dab356e05c6def0d094bb79776711e68ffdfad2df6a7f877f7db6",
+        "hashType": "data"
+      }
+    },
+    "deployedTxHash": ""
+  },
+  "maxGapPeriod": 10
+}
